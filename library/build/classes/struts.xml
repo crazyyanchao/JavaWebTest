@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+
+	<package name="admin" extends="tiles-default" namespace="/admin">
+		<action name="index" class="library.action.IndexAction">
+			<result>/WEB-INF/jsp/admin/index.jsp</result>
+		</action>
+		<action name="*Ajax_*" class="library.action.{2}Action" method="{1}">
+			<result name="success">/WEB-INF/jsp/admin/{2}/{1}.jsp</result>
+			<result name="redirectAction" type="redirectAction">${#redirectAction}</result>
+		</action>
+		<action name="*_*" class="library.action.{2}Action" method="{1}">
+			<result name="success" type="tiles">admin/{1}_{2}</result>
+			<result name="input">/WEB-INF/jsp/admin/{2}/{1}.jsp</result>
+			<result name="redirectAction" type="redirectAction">${#redirectAction}</result>
+		</action>
+
+	</package>
+
+	<package name="front" extends="tiles-default" namespace="/front">
+		<action name="index" class="library.action.IndexAction">
+			<result type="tiles">front/index_Common</result>
+		</action>
+		<action name="*Ajax_*" class="library.action.{2}Action" method="{1}">
+			<result name="success">/WEB-INF/jsp/front/{2}/{1}.jsp</result>
+			<result name="redirectAction" type="redirectAction">${#redirectAction}</result>
+		</action>
+		<action name="*_*" class="library.action.{2}Action" method="{1}">
+			<result name="success" type="tiles">front/{1}_{2}</result>
+			<result name="input">/WEB-INF/jsp/front/{2}/{1}.jsp</result>
+			<result name="redirectAction" type="redirectAction">${#redirectAction}</result>
+		</action>
+
+	</package>
+
+	<package name="json" extends="json-default" namespace="">
+		<action name="*_*" class="library.action.{2}Action" method="{1}">
+			<result name="success" type="json" />
+		</action>
+	</package>
+</struts> 
+ 

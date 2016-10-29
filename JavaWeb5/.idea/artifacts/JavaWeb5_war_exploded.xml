@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaWeb5:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWeb5_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaWeb5/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaWeb5" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate" />
+          <element id="library" level="module" name="JUnit4" module-name="JavaWeb5" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/commons-fileupload-1.3.2.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/commons-io-2.2.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/commons-logging-1.1.3.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/freemarker-2.3.22.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/commons-lang3-3.2.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/mysql-connector-java-5.1.38-bin.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/ognl-3.0.19.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/xwork-core-2.3.30.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/struts2-core-2.3.30.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/javassist-3.11.0.GA.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

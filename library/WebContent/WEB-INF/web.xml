@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:beans.xml</param-value>
+	</context-param>
+
+	<!-- <filter> <filter-name>privilegeFilter</filter-name> <filter-class>library.filter.PrivilegeFilter</filter-class> 
+		</filter> <filter-mapping> <filter-name>privilegeFilter</filter-name> <url-pattern>/*</url-pattern> 
+		</filter-mapping> -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- 把Session增大 以免出现Lazy加载错误 -->
+	<filter>
+		<filter-name>openSessionInView</filter-name>
+		<filter-class>
+			org.springframework.orm.hibernate4.support.OpenSessionInViewFilter
+		</filter-class>
+		<init-param>
+			<param-name>sessionFactoryBeanName</param-name>
+			<param-value>sessionFactory</param-value>
+		</init-param>
+		<init-param>
+			<param-name>singleSession</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>flushMode</param-name>
+			<param-value>AUTO 
+		</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>openSessionInView</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 利用的spring的过滤器来设置编码方式 -->
+	<filter>
+		<filter-name>Spring character encoding filter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>GBK</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>Spring character encoding filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!--<servlet> <servlet-name>receiveResultServlet</servlet-name> <servlet-class>oj.init.ReceiveResultServlet</servlet-class> 
+		</servlet> <servlet> <servlet-name>servletProxy</servlet-name> <servlet-class>oj.init.ServletProxy</servlet-class> 
+		<init-param> <param-name>targetServlet</param-name> <param-value>receiveResultServlet</param-value> 
+		</init-param> <load-on-startup>1</load-on-startup> </servlet> -->
+	<!-- 配置Tiles Listener初始化参数， 用于设置Tiles 组装文件位置和名称 -->
+	<context-param>
+		<param-name>
+			org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG
+		</param-name>
+		<param-value>
+          /WEB-INF/tiles-defs.xml
+        </param-value>
+	</context-param>
+
+	<!-- 配置Tiles监听器 -->
+	<listener>
+		<listener-class>org.apache.tiles.web.startup.TilesListener</listener-class>
+	</listener>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
+

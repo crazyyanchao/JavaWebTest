@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC  "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+    <field name="username">
+        <field-validator type="requiredstring">
+        <param name="trim">true</param>
+            <message>账号不能为空</message>
+        </field-validator>
+    </field>
+    <field name="password">
+        <field-validator type="requiredstring">
+        <param name="trim">true</param>
+            <message>密码不能为空</message>
+        </field-validator>
+    </field>
+</validators>
+
+
+<!--原因是http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd已经不是dtd约束文件了,
+打开网址,发现opensymphony的网址已经迁移走了,因为xwork的东西已经并入struts2中,成为apache的一部分.
+所有的dtd已经移交到http://struts.apache.org/dtds/ 这个地方.
+以后struts2的校验器的规范要改成:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC  "-//Apache Struts//XWork Validator 1.0.2//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+这样就不会报错了,运行正常.over.-->

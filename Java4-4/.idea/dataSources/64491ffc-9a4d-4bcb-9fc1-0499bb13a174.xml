@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="test">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <table id="3" parent="1" name="user"/>
+    <table id="4" parent="1" name="users"/>
+    <column id="5" parent="3" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="6" parent="3" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="7" parent="3" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <key id="8" parent="3" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="9" parent="4" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="10" parent="4" name="username">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="11" parent="4" name="password">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="12" parent="4" name="email">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="13" parent="4" name="sex">
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="14" parent="4" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

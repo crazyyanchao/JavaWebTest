@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - onlinetest2@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="onlinetest2">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bookstore"/>
+    <schema id="3" name="bookstore2"/>
+    <schema id="4" name="db_dorm"/>
+    <schema id="5" name="hibernate"/>
+    <schema id="6" name="hibernatespring"/>
+    <schema id="7" name="information_schema"/>
+    <schema id="8" name="mysql"/>
+    <schema id="9" name="test"/>
+    <table id="10" parent="1" name="academydepartment"/>
+    <table id="11" parent="1" name="chapter"/>
+    <table id="12" parent="1" name="class"/>
+    <table id="13" parent="1" name="course"/>
+    <table id="14" parent="1" name="datadictionary"/>
+    <table id="15" parent="1" name="essayquestion"/>
+    <table id="16" parent="1" name="fillblank"/>
+    <table id="17" parent="1" name="multichoose"/>
+    <table id="18" parent="1" name="singlechoose"/>
+    <table id="19" parent="1" name="teachercourse"/>
+    <table id="20" parent="1" name="testpaper"/>
+    <table id="21" parent="1" name="tests"/>
+    <table id="22" parent="1" name="user"/>
+    <column id="23" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="24" parent="10" name="firstCode">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="25" parent="10" name="firstCodeValue">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="26" parent="10" name="secondCode">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="27" parent="10" name="secondCodeValue">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="28" parent="10" name="isDelete">
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="29" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="30" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="31" parent="11" name="courseCode">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="32" parent="11" name="chapterCode">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="33" parent="11" name="chapterCodeValue">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="34" parent="11" name="isDelete">
+      <comment>0è¡¨ç¤ºæœ‰æ•ˆï¼Œ1ä¸ºå·²åˆ é™¤</comment>
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="35" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="36" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="37" parent="12" name="profession">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="38" parent="12" name="startYear">
+      <data-type>int(4)|0</data-type>
+    </column>
+    <column id="39" parent="12" name="classCode">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="40" parent="12" name="classValue">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="41" parent="12" name="isDelete">
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="42" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="43" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="44" parent="13" name="courseCode">
+      <data-type>varchar(20)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="45" parent="13" name="courseCodeValue">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="46" parent="13" name="isDelete">
+      <comment>0è¡¨ç¤ºæœ‰æ•ˆï¼Œ1ä¸ºåˆ é™¤</comment>
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="47" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="48" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="49" parent="14" name="firstCode">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="50" parent="14" name="firstCodeValue">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="51" parent="14" name="secondCode">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="52" parent="14" name="secondCodeValue">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="53" parent="14" name="isDelete">
+      <comment>0è¡¨ç¤ºæœ‰æ•ˆï¼Œ1ä¸ºå·²åˆ é™¤</comment>
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="54" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="55" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="56" parent="15" name="course">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="57" parent="15" name="chapter">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="58" parent="15" name="level">
+      <data-type>varchar(4)|0</data-type>
+    </column>
+    <column id="59" parent="15" name="title">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="60" parent="15" name="answer">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="61" parent="15" name="creator">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="62" parent="15" name="createTime">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="63" parent="15" name="isDelete">
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="64" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="65" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="66" parent="16" name="course">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="67" parent="16" name="chapter">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="68" parent="16" name="level">
+      <comment>éš¾åº¦ç­‰çº§,1ä¸ºç®€å&#x8d;•ï¼Œ2ä¸ºéš¾</comment>
+      <data-type>varchar(4)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="69" parent="16" name="title">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="70" parent="16" name="isAnswerFixed">
+      <comment>ç­”æ¡ˆæ˜¯å&#x90;¦å›ºå®šï¼Œè®¾å®š0ä¸ºä¸&#x8d;å›ºå®šï¼Œ1ä¸ºå›ºå®šï¼Œé»˜è®¤ä¸º0</comment>
+      <data-type>varchar(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="71" parent="16" name="answer">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="72" parent="16" name="creator">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="73" parent="16" name="createTime">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="74" parent="16" name="isDelete">
+      <comment>1è¡¨ç¤ºå·²ç»&#x8f;è¢«åˆ é™¤ï¼Œ0è¡¨ç¤ºæœªè¢«åˆ é™¤</comment>
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="75" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="76" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="77" parent="17" name="course">
+      <comment>ç§‘ç›®</comment>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="78" parent="17" name="chapter">
+      <comment>æ‰€åœ¨ç« èŠ‚</comment>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="79" parent="17" name="level">
+      <comment>éš¾åº¦ç­‰çº§,1ä¸ºç®€å&#x8d;•ï¼Œ2ä¸ºéš¾</comment>
+      <data-type>varchar(4)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="80" parent="17" name="title">
+      <comment>é¢˜ç›®å†…å®¹</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="81" parent="17" name="answer1">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="82" parent="17" name="answer2">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="83" parent="17" name="answer3">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="84" parent="17" name="answer4">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="85" parent="17" name="answer5">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="86" parent="17" name="answer6">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="87" parent="17" name="trueanswer">
+      <data-type>varchar(6)|0</data-type>
+    </column>
+    <column id="88" parent="17" name="creator">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="89" parent="17" name="createTime">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="90" parent="17" name="isDelete">
+      <comment>1è¡¨ç¤ºå·²ç»&#x8f;è¢«åˆ é™¤ï¼Œ0è¡¨ç¤ºæœªè¢«åˆ é™¤</comment>
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="91" parent="17" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="92" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="93" parent="18" name="course">
+      <comment>ç§‘ç›®</comment>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="94" parent="18" name="chapter">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="95" parent="18" name="level">
+      <comment>éš¾åº¦ç­‰çº§ï¼Œ1ä¸ºç®€å&#x8d;•ï¼Œ2ä¸ºéš¾</comment>
+      <data-type>varchar(4)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="96" parent="18" name="title">
+      <comment>é¢˜ç›®å†…å®¹</comment>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="97" parent="18" name="answer1">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="98" parent="18" name="answer2">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="99" parent="18" name="answer3">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="100" parent="18" name="answer4">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="101" parent="18" name="trueanswer">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="102" parent="18" name="creator">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="103" parent="18" name="createTime">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="104" parent="18" name="isDelete">
+      <comment>1è¡¨ç¤ºå·²ç»&#x8f;è¢«åˆ é™¤ï¼Œ0è¡¨ç¤ºæœªè¢«åˆ é™¤</comment>
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="105" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="106" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="107" parent="19" name="userId">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="108" parent="19" name="courses">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="109" parent="19" name="isDelete">
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="110" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="111" parent="20" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="112" parent="20" name="course">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="113" parent="20" name="chapter">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="114" parent="20" name="date">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="115" parent="20" name="startTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="116" parent="20" name="endTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="117" parent="20" name="joinClass">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="118" parent="20" name="creater">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="119" parent="20" name="creatTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="120" parent="20" name="totalScore">
+      <data-type>varchar(3)|0</data-type>
+    </column>
+    <column id="121" parent="20" name="marker">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="122" parent="20" name="sc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="123" parent="20" name="sScore">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="124" parent="20" name="mc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="125" parent="20" name="mScore">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="126" parent="20" name="tf">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="127" parent="20" name="tfScore">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="128" parent="20" name="fb">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="129" parent="20" name="fScore">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="130" parent="20" name="eq">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="131" parent="20" name="eScore">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="132" parent="20" name="fixed">
+      <data-type>varchar(4)|0</data-type>
+    </column>
+    <column id="133" parent="20" name="isDelete">
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="134" parent="20" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="135" parent="21" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="136" parent="21" name="userId">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="137" parent="21" name="classCode">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="138" parent="21" name="testPaperId">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="139" parent="21" name="score">
+      <data-type>varchar(3)|0</data-type>
+    </column>
+    <column id="140" parent="21" name="sc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="141" parent="21" name="mc">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="142" parent="21" name="tf">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="143" parent="21" name="fb">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="144" parent="21" name="eq">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="145" parent="21" name="isDelete">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <key id="146" parent="21" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="147" parent="22" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="148" parent="22" name="userId">
+      <comment>ç”¨æˆ·ç¼–å&#x8f;·ï¼ŒåŒ…æ‹¬å­¦å&#x8f;·å’Œæ•™è&#x81;Œå·¥å&#x8f;·</comment>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="149" parent="22" name="name">
+      <comment>ç”¨æˆ·çš„çœŸå®žå§“å&#x90;&#x8d;</comment>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="150" parent="22" name="password">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="151" parent="22" name="gender">
+      <comment>1ä¸ºç”·ï¼Œ0ä¸ºå¥³</comment>
+      <data-type>int(4)|0</data-type>
+    </column>
+    <column id="152" parent="22" name="phone">
+      <data-type>bigint(11)|0</data-type>
+    </column>
+    <column id="153" parent="22" name="email">
+      <comment>ä»¥é‚®ç®±ä½œä¸ºç”¨æˆ·åŒºåˆ†çš„åˆ¤å®šæ ‡å‡†ï¼Œä¸€ä¸ªé‚®ç®±è¡¨ç¤ºä¸€ä¸ªç”¨æˆ·</comment>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="154" parent="22" name="qq">
+      <comment>QQ</comment>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="155" parent="22" name="role">
+      <comment>ç”¨æˆ·ç±»åž‹ï¼Œæ•™å¸ˆ(è&#x81;Œç§°),å­¦ç”Ÿ(å­¦åŽ†)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="156" parent="22" name="belongNo">
+      <comment>æ‰€å±ž,å­¦ç”Ÿå¡«å†™ç&#x8f;­çº§ï¼Œæ•™å¸ˆå¡«å†™å­¦é™¢</comment>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="157" parent="22" name="photo1">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="158" parent="22" name="photo2">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="159" parent="22" name="passed">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="160" parent="22" name="isDelete">
+      <comment>0è¡¨ç¤ºæœ‰æ•ˆï¼Œ1ä¸ºå·²åˆ é™¤</comment>
+      <data-type>varchar(2)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="161" parent="22" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

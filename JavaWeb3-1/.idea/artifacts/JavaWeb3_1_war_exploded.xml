@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="JavaWeb3-1:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWeb3_1_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaWeb3-1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaWeb3-1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Struts 2" />
+          <element id="file-copy" path="/home/myc/Downloads/mysql-connector-java-5.1.38-bin.jar" />
+          <element id="file-copy" path="/home/myc/Downloads/struts-2.3.30min/lib/javassist-3.11.0.GA.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

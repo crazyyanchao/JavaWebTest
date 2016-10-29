@@ -1,0 +1,105 @@
+body {
+	background-color: #0F5;
+	text-align: center;
+	margin: 0px;
+}
+
+#container {
+	width: 1200px;
+	background-color: #F0F;
+	height: 800px;
+	margin: 0px auto;
+}
+
+#header {
+	height: 60px;
+	background-color: #00F;
+	margin: 0px auto;
+	font-size: 36px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	vertical-align: center;
+}
+
+#navigation {
+	height: 30px;
+	background-color: #FFA;
+	margin-top: 0;
+}
+
+#navigation ul {
+	text-align: center;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#navigation ul li {
+	float: left;
+	width: 25%;
+	list-style: none;
+	vertical-align: middle;
+	margin: auto 0px;
+}
+
+#left {
+	float: left;
+	width: 200px;
+	background-color: #00BF55;
+	height: 920px;
+	margin: 0px;
+}
+
+#left ul {
+	list-style: none;
+}
+
+#left ul li {
+	text-align: left;
+}
+
+#left ul p {
+}
+
+#left ul li ul {
+	margin-left: 0px;
+	display: none;
+}
+
+#left ul li ul li {
+	margin-left: 0px;
+}
+
+.board_ul {
+	list-style: none;
+	margin-left: 1px;
+	text-align: left;
+}
+
+.board_li {
+	
+}
+
+.board {
+	clear: both;
+}
+
+.board>div {
+	float: left;
+	width: 330px;
+	height: 250px;
+	background-color: gray;
+	margin: 5px;
+}
+
+#main {
+	background-color: #458B00;
+	margin: 0px;
+	height: 900px;
+	padding: 10px;
+}
+
+#footer {
+	margin-bottom: 0px;
+	height: 100px;
+	background-color: #D4BF55;
+	clear: both;
+}

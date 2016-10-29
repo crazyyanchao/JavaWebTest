@@ -1,0 +1,26 @@
+table {
+	border: 1 solid black;
+	border-collapse: collapse;
+	margin: 5 auto;
+	font-size: 15px;
+}
+
+caption {
+	font-size: 22px;
+	font: bold;
+	background-color: #575757;
+}
+
+tr {
+	border: 1 solid black;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	border: 1 solid black;
+	border-collapse: collapse;
+}

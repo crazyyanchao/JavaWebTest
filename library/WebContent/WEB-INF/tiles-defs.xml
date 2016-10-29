@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<!-- 基础配置 -->
+	<definition name="admin.base"
+		template="/WEB-INF/jsp/admin/include/layout.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/jsp/admin/include/header.jsp" />
+		<put-attribute name="navigation"
+			value="/WEB-INF/jsp/admin/include/navigation.jsp" />
+		<put-attribute name="left"
+			value="/WEB-INF/jsp/admin/include/left.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/admin/include/footer.jsp" />
+	</definition>
+
+	<definition name="front.base"
+		template="/WEB-INF/jsp/front/include/layout.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/jsp/front/include/header.jsp" />
+		<put-attribute name="navigation"
+			value="/WEB-INF/jsp/front/include/navigation.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/front/include/footer.jsp" />
+	</definition>
+	<!--后台 -->
+	<definition name="admin/error" extends="admin.base">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/error.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin/*_*" extends="admin.base">
+		<put-attribute name="main" value="/WEB-INF/jsp/admin/{2}/{1}.jsp"></put-attribute>
+	</definition>
+
+	<!-- 前台 -->
+	<definition name="front/*_*" extends="front.base">
+		<put-attribute name="main" value="/WEB-INF/jsp/front/{2}/{1}.jsp"></put-attribute>
+	</definition>
+	<definition name="front/error" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/jsp/front/error.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>

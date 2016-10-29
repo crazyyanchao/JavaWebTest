@@ -1,0 +1,109 @@
+body {
+	background-color: #0F5;
+	text-align: center;
+	margin: 0px;
+}
+
+#container {
+	width: 1000px;
+	background-color: #F0F;
+	height: 800px;
+	margin: 0px auto;
+}
+
+#header {
+	height: 60px;
+	background-color: #00F;
+	margin: 0px auto;
+	font-size: 36px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	vertical-align: center;
+}
+
+#navigation {
+	height: 20px;
+	background-color: #FFA;
+	padding: 3px;
+}
+
+#navigation ul {
+	text-align: center;
+	margin: auto 5;
+	vertical-align: middle;
+}
+
+#navigation ul li {
+	float: left;
+	width: 10%;
+	list-style: none;
+	vertical-align: middle;
+	margin: auto 0px;
+}
+
+#center {
+	background-color: green;
+	min-height: 640px;
+}
+
+#search {
+	background-color: gray;
+	height: 25px;
+	margin: auto 0px;
+	padding: 2px;
+}
+
+#main {
+	background-color: #500;
+	margin: 0px;
+	height: 620px;
+	padding: 10px;
+}
+
+.board_ul {
+	list-style: none;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+.board_li {
+	padding-left: 10px;
+}
+
+.board {
+	clear: both;
+	text-align: left;
+}
+
+.board>div {
+	float: left;
+	width: 320px;
+	height: 290px;
+	background-color: gray;
+	margin: 3px;
+}
+
+.board_ul {
+	margin-left: 10px;
+}
+
+.board_ul li {
+	width: 270px;
+	margin: 5px;
+	background-color: red;
+	padding-right: 10px;
+}
+
+.board_title {
+	margin: 10px;
+}
+
+.borrowedCount {
+	margin-left: 1000px;
+}
+
+#footer {
+	margin-bottom: 0px;
+	height: 100px;
+	background-color: #D4BF55;
+	clear: both;
+}

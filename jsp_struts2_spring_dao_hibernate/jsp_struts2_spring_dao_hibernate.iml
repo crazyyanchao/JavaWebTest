@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.22-bin.jar!/" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/commons-fileupload-1.2.2.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/commons-io-2.0.1.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/commons-lang3-3.1.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/freemarker-2.3.19.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/javassist-3.11.0.GA.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/ognl-3.0.5.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/struts2-core-2.3.4.1.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/struts2-spring-plugin-2.3.4.1.jar" />
+    <libelement value="file://C:/Documents and Settings/周何骏/Workspaces/MyEclipse 10/第3章/jsp_struts2_spring_dao_hibernate/WebRoot/WEB-INF/lib/xwork-core-2.3.4.1.jar" />
+    <conelement value="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_6_CONTAINER" />
+    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
+    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
+    <conelement value="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_CORE" />
+    <conelement value="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_AOP" />
+    <conelement value="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_Persistence_JDBC" />
+    <conelement value="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_Persistence_CORE" />
+    <conelement value="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_WEB" />
+    <conelement value="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_EM" />
+    <conelement value="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_CORE" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebRoot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebRoot" relative="/" />
+        </webroots>
+      </configuration>
+      <facet type="Struts2" name="Struts 2">
+        <configuration>
+          <fileset id="s2fileset" name="My Fileset " removed="false">
+            <file>file://$MODULE_DIR$/src/struts.xml</file>
+            <file>jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/struts2-convention-plugin-2.3.20.jar!/struts-plugin.xml</file>
+            <file>jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/struts2-core-2.3.8.jar!/struts-default.xml</file>
+            <file>jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/struts2-spring-plugin-2.3.8.jar!/struts-plugin.xml</file>
+          </fileset>
+          <propertiesKeys disabled="false" />
+        </configuration>
+      </facet>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="sessionFactory" value="dataSource" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.properties" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/WebRoot/WEB-INF/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="library" name="Spring-3.2.17.RELEASE" level="project" />
+    <orderEntry type="library" name="Hibernate 4.2.2-4.2.2" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/antlr-2.7.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/aopalliance-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/asm-3.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/asm-commons-3.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/asm-commons.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/aspectjweaver-1.7.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/cglib-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/commons-dbcp-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/commons-fileupload-1.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/commons-io-2.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/commons-lang3-3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/commons-logging-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/dom4j-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/druid-1.0.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/ehcache-core-2.6.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/fastjson-1.1.37.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/freemarker.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/hibernate-commons-annotations-4.0.1.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/hibernate-core-4.1.9.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/hibernate-ehcache-4.1.9.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/javassist-3.17.1-GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/jboss-logging-3.1.0.GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/jboss-transaction-api_1.1_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/jstl-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/log4j-1.2.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/mysql-connector-java-5.1.16-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/ognl-3.0.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/slf4j-api-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/slf4j-log4j12-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-aop-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-aspects-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-beans-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-context-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-core-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-expression-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-instrument-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-jdbc-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-jms-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-orm-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-oxm-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-test-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-tx-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/spring-web-3.2.0.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/standard-1.1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/struts2-convention-plugin-2.3.20.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/struts2-core-2.3.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/struts2-spring-plugin-2.3.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/Struts2+Spring3+Hibernate4-整合包/xwork-core-2.3.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/myc/Downloads/org.apache.commons.collections.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="commons-pool:commons-pool:1.3" level="project" />
+  </component>
+</module>

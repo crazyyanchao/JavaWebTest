@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<style type="text/css">
+body {
+	background-color:#0F5;
+	text-align:center;
+	margin:  0px;
+}
+#container {
+	width:700px;
+	background-color:#F0F;
+	height:800px;
+	margin: 0px auto;
+}
+#header {
+	height:60px;
+	background-color:#00F;
+	margin:0px auto;
+	font-size:36px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	vertical-align:center;
+}
+#navigation {
+	height:30px;
+	background-color:#FFA;
+	margin-top:0;
+}
+#navigation ul {
+	text-align:center;
+	margin: auto;
+	vertical-align:middle;
+}
+#navigation ul li {
+	float:left;
+	width:25%;
+	list-style:none;
+	vertical-align:middle;
+	margin: auto 0px;
+}
+#left {
+	float:left;
+	width:200px;
+	background-color:#00BF55;
+	height:570px;
+	margin:0px;
+}
+#left ul {
+	list-style:none;
+}
+#left ul li {
+	text-align:left;
+}
+#left ul p {
+	border-bottom:1px solid black;
+}
+#left ul li ul {
+	margin-left:0px;
+	display:none;
+}
+#left ul li ul li {
+	margin-left:0px;
+}
+.board_ul{
+list-style: none;
+margin-left: 10px;
+padding-left: 10px;
+}
+.board_li{
+padding-left: 10px;
+} 
+.board{
+	clear: both;
+	text-align: left;
+}
+.board > div{
+	float: left;
+	width: 330px;
+	height: 250px;
+	background-color: gray;
+	margin: 5px;
+}
+
+.board_ul{
+	margin-left: 10px;
+}
+
+.board_ul li{
+	width:280px;
+	margin: 5px;
+	background-color: red;
+	padding-right: 10px;
+}
+
+.board_title{
+	margin: 10px;
+}
+#main {
+	background-color:#500;
+	margin:0px;
+	height:900px;
+	padding: 10px;
+	
+}
+.borrowedCount{
+margin-left: 1000px;
+}
+#footer {
+	margin-bottom:0px;
+	height:100px;
+	background-color:#D4BF55;
+	clear:both;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">图书管理系统</div>
+	<div id="navigation">
+		<ul>
+			<li><a href="">首页</a></li>
+			<li><a href="">aaaa</a></li>
+			<li><a href="">用户管理</a></li>
+			<li><a href="">用户登录</a></li>
+		</ul>
+	</div>
+	<div id="center">
+		<div id="search">
+			<form action="admin/showAll_Book" method="post">
+			<select name="query" >
+				<option value="所有字段" selected="selected">所有字段</option>
+				<option value="bookName" >书名</option>
+				<option value="author" >作者</option>
+				<option value="bookId" >书号</option>
+			</select>
+			<input name="value" />
+			<input type="submit" value="检索" />
+			</form>
+		</div>
+		<div id="main">
+			<div class="board">
+				<div id="announcements">
+					<div class="board_title">公告</div>
+					<marquee direction='up' scrolldelay='100' scrollamount='2' truespeed="truespeed" 
+					onMouseOver='this.stop()' onMouseOut='this.start()' height='200'>
+						公告 公告
+					</marquee>
+				</div>
+				<div id="new_comments">
+					<div class="board_title">最新书评</div>
+					<ul class="board_ul">
+					</ul>
+				</div>
+			</div>
+			<div class="board">
+				<div id="borrow_rank">
+					<div class="board_title">借阅排行榜</div>
+					<ul class="board_ul">
+					</ul>
+				</div>
+				<div id="new_books">
+					<div class="board_title">新书上架</div>  
+					<ul class="board_ul">
+					</ul>
+				</div>
+			</div>
+			<div class="board">
+				<div id="new_books">
+					<div class="board_title">文档分类</div>  
+					<ul class="board_ul">
+					</ul>
+				</div>
+				<div id="new_books">
+					<div class="board_title">用户管理</div>  
+					<ul class="board_ul">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">aaaaaaaaa</div>
+</div>
+</body>
+</html>
